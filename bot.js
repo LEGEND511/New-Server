@@ -137,7 +137,7 @@ client.on('message' , message => {
 
 
 client.on('message',async message => {
- 
+  var prefix = "/";
   if(message.content.startsWith(prefix + "js")) {
 
 if(!message.channel.guild) return message.reply(' ');
@@ -285,7 +285,7 @@ ${thisMessage}\`\`\`
     })}});
 
 client.on('message',async message => {
- 
+  var prefix = "/";
   if(message.content.startsWith(prefix + "html")) {
 
 if(!message.channel.guild) return message.reply(' ');
@@ -524,11 +524,12 @@ ${thisMessage}\`\`\`
 
 
 client.on('message',async message => {
-    if (message.content.startsWith('#html')) { // حقوق wicked
+   
+  if (message.content.startsWith('#html')) { // حقوق wicked
   if(!message.channel.guild) return message.reply('This Command For Servers Only !');
   let staff = message.guild.member(message.author).roles.find('name' , 'Support');// رتبه السبورت
   if(!staff) return msg.reply('🛑 You Cant Do This Command')
-      let jscodes = message.guild.channels.find(`name`, "");// روم يلي ينشر الكود فيه
+      let jscodes = message.guild.channels.find(`name`, "✭𝘿𝙞𝙨𝙘𝙤𝙧𝙙-𝙝𝙩𝙢𝙡✭");// روم يلي ينشر الكود فيه
     if(!jscodes) return message.channel.send(":x:لم اجد الروم الخاص بنشر الاكواد");
       let filter = m => m.author.id === message.author.id;
       let thisMessage;
