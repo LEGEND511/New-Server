@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 
  client.on('ready', function(){
-    client.user.setStatus("do not disturb");
+    client.user.setStatus("idle");
     var ms = 1 ;
 
 });
