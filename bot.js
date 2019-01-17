@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member=> {
 // حالة البوت او الوصف
 
 client.on('ready', () => {
-     client.user.setActivity("Mero Codes For Ever",{type: 'Streaming'})
+     client.user.setActivity("/تقديم",{type: 'Streaming'})
 
 });
 
