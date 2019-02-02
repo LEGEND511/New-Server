@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member=> {
 // حالة البوت او الوصف
 
 client.on('ready', () => {
-     client.user.setActivity("/تقديم",{type: 'Streaming'})
+     client.user.setActivity("Mero Codes Bot",{type: 'Listening'})
 
 });
 
@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 
  client.on('ready', function(){
-    client.user.setStatus("idle");
+    client.user.setStatus("dnd");
     var ms = 1 ;
 
 });
@@ -928,7 +928,7 @@ client.on('message',function(message) {
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
-message.channel.send(`**[ ${args} ]**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
+message.channel.send(`**${args}**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
 }
 });
 
