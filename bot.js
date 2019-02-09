@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member=> {
 // حالة البوت او الوصف
 
 client.on('ready', () => {
-     client.user.setActivity("Mero Codes Bot",{type: 'Listening'})
+     client.user.setActivity("Over Codes",{type: 'Listening'})
 
 });
 
@@ -87,7 +87,7 @@ client.on('message', async rokz => {
 [${time}]
 [${lang}]`)
  
-              let rokzz = rokz.guild.channels.find("name","قبول-رفض")
+              let rokzz = rokz.guild.channels.find("name","التقــــــــديمات")
  
               setTimeout(() => {
  
